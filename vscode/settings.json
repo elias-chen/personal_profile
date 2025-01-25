@@ -1,0 +1,85 @@
+{
+    // workbench theme
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "Source Code Pro, '微软雅黑', monospace",    
+
+    // 行高
+    "editor.lineHeight": 1.6,
+
+    // terminal font
+    "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font",
+    "terminal.integrated.fontSize": 15,
+    "editor.fontSize": 16,
+    
+    // use vimrc
+    "vim.vimrc.enable": true,
+
+    // save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    // error lens
+    "workbench.colorCustomizations": {
+        // 可以在这里修改 erroe lens 的颜色
+        // "errorLens.errorBackground": "#ff0000"
+    },
+
+    // code runner
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        // 将 exe 输出到 bin 目录下面，统一管理
+        "c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+        "python": "python -u"
+    },
+
+    // doxygen
+    "doxdocgen.generic.authorName": "pointer",
+    "doxdocgen.generic.authorEmail": "1256623959@qq.com",
+
+    // c/c++
+    "C_Cpp.default.cppStandard": "c++17",   // c++ 版本
+    "C_Cpp.default.cStandard": "c17",        // C 语言版本
+
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,  // 类型提示
+    "C_Cpp.inlayHints.parameterNames.enabled": true,        // 参数提示
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+    "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    // 格式化规范
+    // "C_Cpp.formatting": "clangFormat",
+    // "C_Cpp.clang_format_style": "Google",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4}", // 基于 google，但缩进为4个
+
+    "extensions.ignoreRecommendations": true,
+
+    // vim
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,  // 允许 vim 覆盖 vscode ctrl 的快捷键
+    "vim.handleKeys": {    // 选择哪些不覆盖哪些快捷键
+        "<C-f>": false
+        // "<C-a>": false,
+        // "<C-c>": false
+    },
+
+
+    // indent-rainbow
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.3)",
+        "rgba(127,255,127,0.3)",
+        "rgba(255,127,255,0.3)",
+        "rgba(79,236,236,0.3)"
+    ],
+    "window.newWindowProfile": "默认",
+    "window.menuBarVisibility": "classic",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "vsicons.dontShowNewVersionMessage": true,
+
+}

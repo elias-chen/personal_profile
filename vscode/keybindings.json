@@ -1,0 +1,111 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // 关闭当前文件
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    // format file
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument"
+    },
+    // 打开 文件树
+    {
+        "key": "ctrl+i",
+        "name": "Toggle sidebar",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
+    // 聚焦侧边栏
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.focusSideBar"
+    },
+    { // 在文件浏览界面，只需按 esc，就可回到编辑器
+        "key": "escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // 打开终端
+    {
+        "key": "ctrl+t",
+        "name": "Toggle terminal",
+        "command": "workbench.action.terminal.toggleTerminal",
+    },
+    // 聚焦左窗口
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    // 聚焦右窗口
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    // 命令面板
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.showCommands"
+    },
+    // 切换文件
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.quickOpen"
+    },
+    // 用 ctrl j k 来上下选择
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    { // Rename file
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // New file
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // New folder
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // Delete file
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // Copy
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // Cut
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    { // Paste
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+]
